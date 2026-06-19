@@ -53,7 +53,7 @@ describe('Calculator', () => {
   describe('power', () => {
     test('should calculate base raised to exponent', () => {
       expect(calc.power(2, 3)).toBe(8);
-    });
+    });#dddddd
 
     test('should handle exponent of zero', () => {
       expect(calc.power(5, 0)).toBe(1);
