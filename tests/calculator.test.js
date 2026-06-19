@@ -50,7 +50,21 @@ describe('Calculator', () => {
       expect(() => calc.divide(5, 0)).toThrow('Division by zero is not allowed');
     });
   });
+  describe('power', () => {
+    test('should calculate base raised to exponent', () => {
+      expect(calc.power(2, 3)).toBe(8);
+    });
 
+    test('should handle exponent of zero', () => {
+      expect(calc.power(5, 0)).toBe(1);
+    });
+
+    test('should handle negative exponent', () => {
+      expect(calc.power(2, -1)).toBe(0.5);
+    });
+  });
+
+  
   describe('history', () => {
     test('should track calculation history', () => {
       calc.add(1, 2);

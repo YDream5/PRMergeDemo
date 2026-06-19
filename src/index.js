@@ -59,6 +59,17 @@ class Calculator {
     this.history.push({ operation: 'divide', args: [a, b], result });
     return result;
   }
+    /**
+   * Calculate power (a^b)
+   * @param {number} base
+   * @param {number} exponent
+   * @returns {number}
+   */
+  power(base, exponent) {
+    const result = Math.pow(base, exponent);
+    this.history.push({ operation: 'power', args: [base, exponent], result });
+    return result;
+  }
 
   /**
    * Get calculation history
