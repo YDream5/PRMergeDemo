@@ -1,0 +1,16 @@
+{
+  "name": "pr-merge-demo",
+  "version": "1.0.0",
+  "description": "A demo project for practicing Git PR merge workflows",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js"
+  },
+  "keywords": ["demo", "git", "pull-request"],
+  "author": "ydream5517",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
